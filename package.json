@@ -1,0 +1,49 @@
+{
+  "name": "eslint-plugin-jsx-a11y-check",
+  "version": "0.9.0",
+  "description": "An ESLint plugin that checks JSX elements for their compliance with accessability standards",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "start": "rollup -c --watch",
+    "build": "rollup -c",
+    "lint": "tsc -b --noEmit & eslint"
+  },
+  "keywords": [
+    "a11y",
+    "accessability",
+    "JSX"
+  ],
+  "author": "Nils Müller",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/estree-jsx": "^1.0.5",
+    "@types/node": "^22.12.0",
+    "colors": "^1.4.0",
+    "dts-bundle-generator": "^9.5.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "rollup": "^4.32.1",
+    "rollup-plugin-cleandir": "^3.0.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0"
+  }
+}
