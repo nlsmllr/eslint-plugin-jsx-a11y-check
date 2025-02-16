@@ -2,10 +2,10 @@
 export const PLUGIN_SHORT_NAME = "jsx-a11y-check";
 
 /** All elements that should have an `alt` attribute set */
-export const ALT_DEPENDANT_JSX_TAGS = ["img", "area", "input"] as const;
+export const ALT_DEPENDANT_JSX_TAGS = ["img", "Image", "area", "input"] as const;
 
 /** Case insensitive list of generic `alt` attribute values that should be avoided */
-export const GENERIC_ALT_VALUES = ["photo", "image", "area", "input"] as const;
+export const GENERIC_ALT_VALUES = ["photo", "picture", "pic", "image", "img", "area", "input"] as const;
 
 /**
  * Symbols that will be ignored when evaluating `alt` attribute values

@@ -14,7 +14,7 @@ const enforceAltTags: Rule.RuleModule = {
 		},
 		messages: {
 			missingAltAttribute:
-				"Provide an `alt` attribute to satisfy accessability requirements.",
+				"Provide an `alt` attribute to satisfy accessibility requirements.",
 			emptyAltAttribute: "`alt` attributes cannot be empty."
 		}
 	},
