@@ -59,7 +59,7 @@ The repository follows a structured organization:
 
 ## Available Rules
 
-### Enforce Alt Tags (`enforce-alt-tags`)
+### Enforce Alt Tags
 **Description**: Ensures that `alt` attributes are present on image elements to improve accessibility.
 
 **Error Messages:**
@@ -78,7 +78,7 @@ The repository follows a structured organization:
 <img src="example.jpg" alt="Description of the image" />
 ```
 
-### No Generic Alt Values (`no-generic-alt-values`)
+### No Generic Alt Values
 **Description**: Prevents the use of generic `alt` values such as `image`, `photo`, or `picture` to ensure meaningful descriptions.
 
 **Error Message:** "Avoid using generic `alt` values such as 'image', 'photo', or 'picture'."
