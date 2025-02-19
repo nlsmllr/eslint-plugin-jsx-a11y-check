@@ -1,11 +1,8 @@
 # ESLint Plugin: JSX Accessibility Check
-
 ## Overview
-
 `eslint-plugin-jsx-a11y-check` is an ESLint plugin designed to help developers ensure their JSX elements comply with accessibility standards. This plugin enforces adherence to the Web Content Accessibility Guidelines (WCAG) by providing custom ESLint rules that detect potential accessibility violations in JSX code.
 
 ## Installation
-
 To install the plugin, run:
 
 ```sh
@@ -19,7 +16,6 @@ yarn add --dev eslint-plugin-jsx-a11y-check
 ```
 
 ## Usage
-
 To enable the plugin, add it to your ESLint configuration:
 
 ```json
@@ -38,7 +34,6 @@ For stricter enforcement, use:
 ```
 
 ## Configuration Options
-
 This plugin offers multiple configurations tailored to different accessibility enforcement levels:
 
 - **Recommended** (`recommended`): Implements basic accessibility rules.
@@ -47,7 +42,6 @@ This plugin offers multiple configurations tailored to different accessibility e
 - **Strict Legacy** (`strict-legacy`): A backward-compatible version of `strict`.
 
 ## Repository Structure
-
 The repository follows a structured organization:
 
 - `src/`: Contains the core ESLint plugin code.
@@ -58,7 +52,6 @@ The repository follows a structured organization:
   - `index.ts`: Serves as the main entry point, exporting rules and configurations.
 
 ## Available Rules
-
 ### Enforce Alt Tags
 **Description**: Ensures that `alt` attributes are present on image elements to improve accessibility.
 
@@ -96,9 +89,7 @@ The repository follows a structured organization:
 ```
 
 ## Development
-
 ### Adding Your Own Rules
-
 To add a new custom ESLint rule, follow these steps:
 
 1. Navigate to the `rules/` directory and create a new file, e.g., `newRule.ts`.
@@ -147,7 +138,6 @@ To add a new custom ESLint rule, follow these steps:
 5. Update the documentation to include the new rule.
 
 ### Running Tests
-
 To run tests for the plugin:
 
 ```sh
@@ -155,7 +145,6 @@ npm test
 ```
 
 ## Contributing
-
 Contributions are welcome! To contribute, follow these steps:
 
 1. Fork the repository.
@@ -164,6 +153,5 @@ Contributions are welcome! To contribute, follow these steps:
 4. Submit a pull request.
 
 ## License
-
 This project is licensed under the MIT License.
 
