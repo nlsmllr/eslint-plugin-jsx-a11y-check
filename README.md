@@ -18,10 +18,34 @@ yarn add --dev eslint-plugin-jsx-a11y-check
 ## Usage
 To enable the plugin, add it to your ESLint configuration:
 
+### ESLint v.9.X.X (Flat Config)
+
+```js
+import {"jsxA11yCheck"} from 'eslint-plugin-jsx-a11y-check';
+
+export default {
+  ...jsxA11yCheck.configs.recommended,
+  // further configuration
+}
+```
+
+For stricter enforcement, use:
+
+```js
+import {"jsxA11yCheck"} from 'eslint-plugin-jsx-a11y-check';
+
+export default {
+  ...jsxA11yCheck.configs.strict,
+  // further configuration
+}
+```
+
+### Legacy ESLint versions (.eslintrc)
+
 ```json
 {
   "plugins": ["jsx-a11y-check"],
-  "extends": ["plugin:jsx-a11y-check/recommended"]
+  "extends": ["plugin:jsx-a11y-check/recommended-legacy"]
 }
 ```
 
@@ -29,7 +53,7 @@ For stricter enforcement, use:
 
 ```json
 {
-  "extends": ["plugin:jsx-a11y-check/strict"]
+  "extends": ["plugin:jsx-a11y-check/strict-legacy"]
 }
 ```
 
@@ -147,10 +171,9 @@ npm test
 ## Contributing
 Contributions are welcome! To contribute, follow these steps:
 
-1. Fork the repository.
-2. Create a new branch (`feature/new-rule` or `fix/bug-name`).
-3. Implement your changes and add corresponding tests.
-4. Submit a pull request.
+1. Create a new branch (`feature/new-rule` or `fix/bug-name`).
+2. Implement your changes and add corresponding tests.
+3. Submit a pull request.
 
 ## License
 This project is licensed under the MIT License.
